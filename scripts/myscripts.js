@@ -31,7 +31,7 @@ logohome.addEventListener("click", function (event) {
         sections[j].classList.remove("active");
     }
     
-    const section = document.getElementById("logo");
+    const section = document.querySelector("#home"); 
     section.classList.add("active"); // show corresponding section
 });
 
@@ -51,3 +51,28 @@ setInterval(() => {
     currentImg = (currentImg + 1) % images.length;
     images[currentImg].classList.add('active');
 }, 5000);
+
+function sendEmail(){
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        address: document.getElementById("address").value,
+        service: document.getElementById("service").value,
+        message: document.getElementById("message").value,
+    };
+
+    const serviceID = "service_pscwnxf";
+    const templateID = "template_xme9zye";
+
+    emailjs.send(serviceID, templateID, params).then(
+        res => {
+            document.getElementById("name").value = "";
+            document.getElementById("email").value  = "";
+            document.getElementById("phone").value  = "";
+            document.getElementById("address").value  = "";
+            document.getElementById("service").value  = "";
+            document.getElementById("message").value  = "";
+        }
+    ).catch(err=>console.log(err));
+}

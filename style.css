@@ -1,99 +1,100 @@
 /* Author: Ethan Bowles
 Date: March 1, 2023
-Version: 1.1 */
+Version: 1.2 */
 
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
   width: 100%;
-	font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 header {
-	background-color: #333;
-	color: #fff;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
 
 .logo img {
-	width: 25%;
+  width: 40%;
+  min-width: 150px;
 }
 
 .contact-info {
-	text-align: right;
+  text-align: right;
 }
 
 .contact-info a {
-	margin: 0;
-	padding: 5px;
+  margin: 0;
+  padding: 5px;
   font-weight: 900;
   color: white;
   text-decoration: none;
 }
 
 nav {
-	background-color: #f2f2f2;
-	padding: 10px;
+  background-color: #d3d3de;
+  padding: 10px;
 }
 
 nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul li {
-	margin: 0 10px;
+  margin: 0 10px;
 }
 
 nav ul li a {
-	text-decoration: none;
+  text-decoration: none;
   font-size: larger;
-	color: #333;
-	padding: 5px 10px;
-	border-radius: 5px;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
-	background-color: #f8f8f8;
+  background-color: #d3d3de;
 }
 
 main {
-	margin: 20px;
+  margin: 20px;
 }
 
 .page {
-	display: none;
+  display: none;
   text-align: center;
 }
 
-.page h1{
-	margin-top: 50px;
+.page h1 {
+  margin-top: 50px;
   margin-bottom: 0;
   font-size: 50px;
   color: rgb(181, 95, 14);
 }
 
 .page.active {
-	display: block;
+  display: block;
 }
 
-.page .home-body{
-  display:flex;
+.page .home-body {
+  display: flex;
   display: -webkit-flex;
   flex-direction: column;
   -webkit-flex-direction: column;
-  justify-content:center;
-  -webkit-justify-content:center;
-  align-items:center;
-  -webkit-align-items:center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  align-items: center;
+  -webkit-align-items: center;
 }
 
 .home-body .image-carousel {
@@ -122,61 +123,53 @@ main {
   opacity: 1;
 }
 
-.home-body .aboutMeContainer{
-  width:1200px;
-  height:600px;
+.home-body .aboutMeContainer {
+  width: 1200px;
+  height: 600px;
   margin: 0% 10% 10% 10%;
-  background: #f3f3f3;
+  background: #d3d3de;
   position: relative;
   display: inline-flex;
   text-align: left;
 }
 
-.aboutMeContainer .aboutMeText{
+.aboutMeContainer .aboutMeText {
   margin: 0;
   width: 50%;
   height: 100%;
-  position:relative;
+  position: relative;
   display: block;
   color: black;
 }
 
-.aboutMeText .aboutMeTextContainer{
+.aboutMeText .aboutMeTextContainer {
   padding: 30px 30px 0 30px;
   height: 100%;
   overflow: hidden;
 }
 
-.aboutMeTextContainer h1{
+.aboutMeTextContainer h1 {
   margin: 0;
   text-align: center;
   color: rgb(181, 95, 14);
 }
 
-.aboutMeTextContainer h2{
+.aboutMeTextContainer h2 {
   font-weight: 500;
 }
 
-.aboutMeTextContainer h3{
+.aboutMeTextContainer h3 {
   margin: 0;
   font-weight: 100;
 }
 
-.aboutMeContainer .aboutMeImg{
-  margin: 0;
+.aboutMeContainer .aboutMeImg {
   width: 50%;
-  height: 100%;
-  position:relative;
+  object-fit: cover;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-}
-
-.aboutMeImg img{
-  object-fit: cover;
-  overflow: hidden;
-  height: 400px;
 }
 
 .service {
@@ -184,10 +177,10 @@ main {
   width: 80%;
   margin: 0 10%;
   align-items: center;
-  justify-content:space-between;
-  background-color: #f8f8f89f;
+  justify-content: space-between;
+  background-color: #d3d3de;
   text-align: left;
-  height:15vw;
+  height: 15vw;
   max-height: 200px;
 }
 
@@ -211,42 +204,39 @@ main {
 .image img {
   object-fit: fill;
   width: auto;
-  height:15vw;
+  height: 15vw;
   max-height: 200px;
 }
 
 .contact-page {
-  display: inline-flex;
-  width: 80%;
-  margin: 0 10%;
-  align-items: center;
-  justify-content:space-between;
-  background-color: #f8f8f8;
+  display: flex;
+  background-color: #d3d3de;
   text-align: left;
-  height: 40vw;
-  max-height: 400px;
+  justify-content: center;
+  /* Aligns children at the start of the container */
+  align-items: center;
+  /* Stretches items to fit the container's cross size */
+  margin: 0 10%;
 }
 
-.contact-page .text{
+.contact-page .text {
   padding: 5%;
   width: 70%;
 }
 
-.contact-page .image{
+.contact-page .image {
   object-fit: fill;
   width: auto;
-  height:18vw;
-  max-height: 200px;
-  margin-right: 20px;
 }
 
 footer {
   text-align: center;
-  background-color: #f8f8f8;
+  background-color: #d3d3de;
   padding: 15px;
-  box-sizing:border-box;
-  bottom:0;
-  left:0;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 footer p {
@@ -254,7 +244,7 @@ footer p {
 }
 
 @media (max-width: 1300px) {
-  .home-body .aboutMeContainer{
+  .home-body .aboutMeContainer {
     width: 80%;
     font-size: large;
     display: flex;
@@ -262,37 +252,103 @@ footer p {
     font-size: 2.5vw;
   }
 
-  .home-body .image-carousel{
+  .home-body .image-carousel {
     width: 80%;
     height: 50vw;
     max-height: 500px;
   }
 
-  .aboutMeContainer .aboutMeText{
+  .aboutMeContainer .aboutMeText {
     width: 100%;
     height: 100%;
   }
 
-  .aboutMeContainer .aboutMeImg{
+  .aboutMeContainer .aboutMeImg {
     display: none;
   }
 
   .text h2 {
-    font-size: 3.5vw;
+    font-size: 2.8vw;
   }
 
   .text p {
-    font-size: 1.8vw;
+    font-size: 2vw;
+  }
+
+  .contact-info a {
+    font-size: 14px;
+  }
+
+  .contact-page .image {
+    display: none;
+  }
+
+  footer {
+    padding: 1.5vw;
+  }
+  footer p {
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contact-page .text h2 {
+    font-size: 3.5vw;
+  }
+
+  .contact-page .text p {
+    font-size: 2.5vw;
+  }
+
+  .contact-page .image {
+    display: none;
   }
 }
 
 @media (max-width: 700px) {
-  .home-body .aboutMeContainer{
+  .home-body .aboutMeContainer {
     height: 117vw;
     font-size: 2.5vw;
   }
 
-	.aboutMeTextContainer h1{
-		font-size: 30px;
-	}
+  .aboutMeTextContainer h1 {
+    font-size: 30px;
+  }
+
+  footer {
+    padding: 2.3vw;
+  }
+  footer p {
+    font-size: 2.3vw;
+  }
+}
+
+.contact-page .form-group input,
+.contact-page .form-group select,
+.contact-page .form-group textarea {
+  font-family: sans-serif;
+  width: 100%;
+  /* Ensures input takes full width of its parent container */
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  /* Spacing between form elements */
+  box-sizing: border-box;
+  /* Includes padding and border in the element's total width and height */
+}
+
+.contact-page .form-group button {
+  width: auto;
+  /* Allows the button to resize according to its content */
+  padding: 10px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: rgb(181, 95, 14);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }
