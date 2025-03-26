@@ -48,11 +48,11 @@
       const images = carousel.querySelectorAll('img');
       let currentImg = 0;
       setInterval(() => {
-        images[currentImg].classList.remove('active');
         currentImg = (currentImg + 1) % images.length;
-        images[currentImg].classList.add('active');
+        images[currentImg].classList.add('active');  
       }, 5000);
     }
+
   
     // Email sending functionality using EmailJS
     window.sendEmail = () => {
