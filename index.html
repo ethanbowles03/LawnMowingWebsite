@@ -1,15 +1,8 @@
-<!-- Author: Ethan Bowles
-     Owned By: Snider Landscaping
-     Date: November 23, 2024
-     Version: 1.3
- -->
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
-  <!-- Linking external stylesheet -->
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Meta Information and External Resources -->
   <meta charset="UTF-8">
   <meta name="description"
     content="Snider Landscaping offers professional landscaping and lawn care services in Fort Wayne, Indiana. We specialize in landscaping, mowing, fertilization, weed control, aeration, hedge trimming, and seasonal cleanup for both residential and commercial properties.">
@@ -17,21 +10,39 @@
     content="Fort Wayne, Lawn Service, Lawn Mowing, Lawncare, Fertilization, Lawn Maintenance, Spring Cleaning, Fall Cleaning, Aeration, Weed Control, Hedge Trimming, Grass Cutting, Yard Maintenance, Landscaping Services, Lawn Treatment, Grass Care, Mulching, Turf Care, Lawn Edging, Yard Cleanup, Gardening, Tree Pruning, Shrub Maintenance, Pest Control, Irrigation, Soil Testing, Fort Wayne Landscaping, Seasonal Cleanup, Lawn Health, Landscape Design, Outdoor Services, Residential Lawncare, Commercial Landscaping">
   <meta name="author" content="Ryan Snider">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://sniderlandscape.com/">
+
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Snider Landscaping - Fort Wayne's Trusted Lawn Care Experts">
+  <meta property="og:description" content="Professional landscaping and lawn care services in Fort Wayne, Indiana.">
+  <meta property="og:image" content="https://sniderlandscape.com/assets/websiteAssets/logo.png">
+  <meta property="og:url" content="https://sniderlandscape.com/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Snider Landscaping">
+  <meta name="twitter:description" content="Professional landscaping and lawn care services in Fort Wayne, Indiana.">
+  <meta name="twitter:image" content="https://sniderlandscape.com/assets/websiteAssets/logo.png">
+
+  <!-- Title and Favicon -->
   <title>Snider Landscaping</title>
-  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/websiteAssets/logo.png">
-  <!-- EmailJS script for email functionality -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
+
+  <!-- Link to External Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- EmailJS for Contact Form Functionality -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
+    // Initialize EmailJS with public key
     (function () {
-      emailjs.init({
-        publicKey: "-hSTCdsDtDdH-rSUL",
-      });
+      emailjs.init({ publicKey: "-hSTCdsDtDdH-rSUL" });
     })();
   </script>
 
-  <!-- Structured Data Markup -->
+  <!-- Structured Data Markup for LocalBusiness -->
   <script type="application/ld+json">
    {
      "@context": "https://schema.org",
@@ -42,7 +53,7 @@
      "email": "sniderlandscape@gmail.com",
      "address": {
        "@type": "PostalAddress",
-       "streetAddress": "1115 Almdale Drive",
+       "streetAddress": "3015 Flaugh Rd",
        "addressLocality": "Fort Wayne",
        "addressRegion": "IN",
        "postalCode": "46818",
@@ -54,173 +65,232 @@
      "areaServed": "Fort Wayne, Indiana",
      "priceRange": "$$"
    }
-   </script>
+  </script>
 </head>
 
 <body>
+  <!-- Header Section -->
   <header>
-    <!-- Logo section -->
     <div id="logo" class="logo">
-      <img src="assets/websiteAssets/logo.png" alt="My Logo">
+      <img src="assets/websiteAssets/logo.png" alt="Snider Landscaping Logo">
     </div>
-    <!-- Contact information -->
     <div class="contact-info">
-      <a href="mailto:sniderlandscape@gmail.com">sniderlandscape@gmail.com</a>
-      <br>
+      <a href="mailto:sniderlandscape@gmail.com">sniderlandscape@gmail.com</a><br>
       <a href="tel:260-450-5799">(260)-450-5799</a>
     </div>
   </header>
+
+  <!-- Navigation Menu -->
   <nav>
-    <!-- Navigation menu -->
     <ul>
       <li><a href="#home" class="nav-link">Home</a></li>
       <li><a href="#services" class="nav-link">Services</a></li>
       <li><a href="#contact" class="nav-link">Contact Us</a></li>
     </ul>
   </nav>
+
+  <!-- Main Content Area -->
   <main>
-    <div class="page" id="home">
-      <h1>Welcome</h1>
-      <br><br>
+    <!-- Home Section -->
+    <section class="page" id="home">
+      <div class="section-header">
+        <h1>Snider Landscaping</h1>
+        <p class="subtitle">Fort Wayne's Trusted Lawn Care Experts</p>
+      </div>
       <div class="home-body">
-        <!-- Image carousel for portfolio images -->
+        <!-- Image Carousel for Home Section -->
         <div class="image-carousel">
-          <img src="assets/portfolio/yard1.webp" alt="Image 1">
-          <img src="assets/portfolio/yard2.webp" alt="Image 2">
-          <img src="assets/portfolio/yard3.webp" alt="Image 3">
-          <img src="assets/portfolio/yard4.webp" alt="Image 4">
-          <img src="assets/portfolio/yard5.webp" alt="Image 5">
-          <img src="assets/portfolio/yard6.webp" alt="Image 6">
-          <img src="assets/portfolio/yard7.webp" alt="Image 7">
-          <img src="assets/portfolio/yard8.webp" alt="Image 8">
-          <img src="assets/portfolio/yard9.webp" alt="Image 9">
-          <img src="assets/portfolio/yard10.webp" alt="Image 10">
-          <img src="assets/portfolio/yard11.webp" alt="Image 11">
-          <img src="assets/portfolio/yard12.webp" alt="Image 12">
-          <!-- Add more images... -->
+          <!-- Images with descriptive alt texts for accessibility -->
+          <img src="assets/portfolio/yard1.webp" alt="Beautiful landscaped yard 1">
+          <img src="assets/portfolio/yard2.webp" alt="Beautiful landscaped yard 2">
+          <img src="assets/portfolio/yard3.webp" alt="Beautiful landscaped yard 3">
+          <img src="assets/portfolio/yard4.webp" alt="Beautiful landscaped yard 4">
+          <img src="assets/portfolio/yard5.webp" alt="Beautiful landscaped yard 5">
+          <img src="assets/portfolio/yard6.webp" alt="Beautiful landscaped yard 6">
+          <img src="assets/portfolio/yard7.webp" alt="Beautiful landscaped yard 7">
+          <img src="assets/portfolio/yard8.webp" alt="Beautiful landscaped yard 8">
+          <img src="assets/portfolio/yard9.webp" alt="Beautiful landscaped yard 9">
+          <img src="assets/portfolio/yard10.webp" alt="Beautiful landscaped yard 10">
+          <img src="assets/portfolio/yard11.webp" alt="Beautiful landscaped yard 11">
+          <img src="assets/portfolio/yard12.webp" alt="Beautiful landscaped yard 12">
         </div>
+        <!-- About Us Section -->
         <div class="aboutMeContainer">
           <div class="aboutMeText">
             <div class="aboutMeTextContainer">
               <h1>About Us</h1>
               <h2>Our Experience</h2>
-              <h3>With years of experience, Snider Landscaping is dedicated to providing efficient and effective lawn
-                care solutions. We pride ourselves on our commitment to customer satisfaction, taking the time to listen
-                to your unique needs and create a customized plan that fits your budget. Trust us to give you the lawn
-                of your dreams, whether you're a homeowner, business owner, or property manager. Contact us today to
-                learn more.</h3>
+              <h3>
+                With years of experience, Snider Landscaping is dedicated to providing efficient and effective lawn care
+                solutions.
+                We pride ourselves on our commitment to customer satisfaction, taking the time to listen to your unique
+                needs and create a customized plan that fits your budget.
+                Trust us to give you the lawn of your dreams, whether you're a homeowner, business owner, or property
+                manager.
+                Contact us today to learn more.
+              </h3>
               <h2>Why Lawncare?</h2>
-              <h3>As a lawn care company, we recognize the importance of maintaining a healthy and attractive lawn for
-                our clients. We believe that a well-maintained lawn not only enhances the visual appeal of a property,
-                but also contributes to a healthy and sustainable environment.</h3>
+              <h3>
+                We recognize the importance of maintaining a healthy and attractive lawn for our clients. A
+                well-maintained lawn not only enhances the visual appeal of a property but also contributes to a
+                healthy, sustainable environment.
+              </h3>
             </div>
           </div>
           <div class="aboutMeImg">
-            <img src="assets/websiteAssets/logo.png" alt="Main Port">
+            <img src="assets/websiteAssets/logo.png" alt="Snider Landscaping Logo">
           </div>
         </div>
       </div>
-    </div>
-    <div class="page" id="services">
-      <h1>Our Services</h1>
-      <!-- Services section -->
-      <div class="service" style="background-color: white;">
-        <div class="text">
-          <h2>Lawn & Yard Maintenance</h2>
-          <p>Tired of mowing your lawn and yard? Let us do the hard work and make your yard the envy of the
-            neighborhood!</p>
+    </section>
+
+    <!-- Services Section -->
+    <section class="page" id="services">
+      <div class="section-header">
+        <h1>Our Services</h1>
+        <p class="subtitle">Professional Landscaping Solutions</p>
+      </div>
+      <div class="services-container">
+        <!-- Service Item: Lawn & Yard Maintenance -->
+        <div class="service">
+          <div class="service-content">
+            <div class="service-text">
+              <h2>Lawn & Yard Maintenance</h2>
+              <p>
+                Transform your outdoor space with our comprehensive lawn and yard maintenance services. We handle
+                everything from regular upkeep to seasonal transformations, ensuring your property maintains its peak
+                condition year-round.
+              </p>
+            </div>
+            <div class="service-image">
+              <img src="assets/websiteAssets/grassicon.png" alt="Lawn and Yard Service">
+            </div>
+          </div>
         </div>
-        <div class="image">
-          <img src="assets/websiteAssets/grassicon.png" alt="Lawn and Yard Service Image">
+        <!-- Service Item: Mowing -->
+        <div class="service">
+          <div class="service-content">
+            <div class="service-text">
+              <h2>Mowing</h2>
+              <p>
+                Experience the perfect cut with our professional mowing service. We maintain precise heights, create
+                clean edges, and ensure consistent coverage, leaving your lawn looking immaculate and professionally
+                maintained.
+              </p>
+            </div>
+            <div class="service-image">
+              <img src="assets/websiteAssets/mowericon.png" alt="Lawn Mowing Service">
+            </div>
+          </div>
+        </div>
+        <!-- Service Item: Hedge and Bush Trimming -->
+        <div class="service">
+          <div class="service-content">
+            <div class="service-text">
+              <h2>Hedge and Bush Trimming</h2>
+              <p>
+                Elevate your landscape with our expert hedge and bush trimming service. We sculpt your greenery with
+                precision, creating clean lines and balanced shapes that enhance your property's curb appeal.
+              </p>
+            </div>
+            <div class="service-image">
+              <img src="assets/websiteAssets/trimmingicon.png" alt="Hedge Trimming Service">
+            </div>
+          </div>
+        </div>
+        <!-- Service Item: Fertilizer Treatment and Weed Control -->
+        <div class="service">
+          <div class="service-content">
+            <div class="service-text">
+              <h2>Fertilizer Treatment and Weed Control</h2>
+              <p>
+                Achieve a lush, healthy lawn with our comprehensive fertilizer and weed control program. We use premium
+                products and proven techniques to promote strong growth while effectively managing unwanted vegetation.
+              </p>
+            </div>
+            <div class="service-image">
+              <img src="assets/websiteAssets/fertilizericon.png" alt="Fertilizer Service">
+            </div>
+          </div>
+        </div>
+        <!-- Service Item: Aeration -->
+        <div class="service">
+          <div class="service-content">
+            <div class="service-text">
+              <h2>Aeration</h2>
+              <p>
+                Revitalize your lawn's health with our professional aeration service. We enhance soil structure, improve
+                nutrient absorption, and promote deeper root growth, ensuring your grass thrives season after season.
+              </p>
+            </div>
+            <div class="service-image">
+              <img src="assets/websiteAssets/aerationicon.png" alt="Aeration Service">
+            </div>
+          </div>
+        </div>
+        <!-- Service Item: Mulch and Rock Installation -->
+        <div class="service">
+          <div class="service-content">
+            <div class="service-text">
+              <h2>Mulch and Rock Installation</h2>
+              <p>
+                Enhance your landscape's beauty and functionality with our premium mulch and rock installation services.
+                We create clean, professional installations that protect your plants while adding visual interest to
+                your property.
+              </p>
+            </div>
+            <div class="service-image">
+              <img src="assets/websiteAssets/shovelicon.png" alt="Mulch Installation Service">
+            </div>
+          </div>
+        </div>
+        <!-- Service Item: Spring and Fall Clean Up -->
+        <div class="service">
+          <div class="service-content">
+            <div class="service-text">
+              <h2>Spring and Fall Clean Up</h2>
+              <p>
+                Start and end each season with a fresh, clean landscape. Our thorough spring and fall clean-up services
+                remove debris, prepare your yard for seasonal changes, and ensure your property looks its best
+                year-round.
+              </p>
+            </div>
+            <div class="service-image">
+              <img src="assets/websiteAssets/rakeicon.png" alt="Cleanup Service">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="service">
-        <div class="text">
-          <h2>Mowing</h2>
-          <p>Our mowing services will leave your grass looking like a freshly cut field at the baseball stadium.</p>
-        </div>
-        <div class="image">
-          <img src="assets/websiteAssets/mowericon.png" alt="Lawn and Yard Service Image">
-        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="page" id="contact">
+      <div class="section-header">
+        <h1>Contact Us</h1>
+        <p class="subtitle">We're Here to Help!</p>
       </div>
-      <div class="service" style="background-color: white;">
-        <div class="text">
-          <h2>Hedge and Bush Trimming</h2>
-          <p>From sculpting hedges to trimming unruly bushes, our hedge and bush trimming service will give your
-            landscape the perfect shape and symmetry it deserves.
-          </p>
-        </div>
-        <div class="image">
-          <img src="assets/websiteAssets/trimmingicon.png" alt="Lawn and Yard Service Image">
-        </div>
-      </div>
-      <div class="service">
-        <div class="text">
-          <h2>Fertilizer Treatment and Weed Control</h2>
-          <p>Say goodbye to pesky weeds and hello to lush green grass with our fertilizer treatment and weed control
-            program.
-          </p>
-        </div>
-        <div class="image">
-          <img src="assets/websiteAssets/fertilizericon.png" alt="Lawn and Yard Service Image">
-        </div>
-      </div>
-      <div class="service" style="background-color: white;">
-        <div class="text">
-          <h2>Aeration</h2>
-          <p>Our aeration service will keep your grass roots healthy and strong, allowing for better water and nutrient
-            absorption.
-          </p>
-        </div>
-        <div class="image">
-          <img src="assets/websiteAssets/aerationicon.png" alt="Lawn and Yard Service Image">
-        </div>
-      </div>
-      <div class="service">
-        <div class="text">
-          <h2>Mulch and Rock Installation</h2>
-          <p>Give your landscape a facelift with our mulch and rock installation services, providing both aesthetic and
-            functional benefits.
-          </p>
-        </div>
-        <div class="image">
-          <img src="assets/websiteAssets/shovelicon.png" alt="Lawn and Yard Service Image">
-        </div>
-      </div>
-      <div class="service" style="background-color: white;">
-        <div class="text">
-          <h2>Spring and Fall Clean Up</h2>
-          <p>Let us take care of your spring and fall clean up needs so you can spend more time enjoying the beauty of
-            your yard rather than cleaning it up!
-          </p>
-        </div>
-        <div class="image">
-          <img src="assets/websiteAssets/rakeicon.png" alt="Lawn and Yard Service Image">
-        </div>
-      </div>
-    </div>
-    <div class="page" id="contact">
-      <h1>Contact Us</h1><br>
+      <!-- Contact Information -->
       <div class="contact-page">
         <div class="text">
           <h2>How can we help?</h2>
-          <p>Effective communication is vital for our lawn care company to ensure that our clients receive the best
-            possible service and their expectations are met. If you have any questions or wish to use our services
-            please contact us below.</p>
+          <p>
+            Effective communication is vital for our lawn care company to ensure that our clients receive the best
+            possible service. If you have any questions or wish to use our services, please contact us below.
+          </p>
           <p><strong>Email:</strong> <a href="mailto:sniderlandscape@gmail.com"
-              style="color: rgb(181, 95, 14); text-decoration: none;">sniderlandscape@gmail.com</a></p>
-          <p><strong>Phone:</strong> <a href="tel:2064505799"
-              style="color: rgb(181, 95, 14); text-decoration: none;">(260) 450-5799</a></p>
-          <p><strong>Address:</strong> 1115 Almdale Drive, Fort Wayne, Indiana 46818, United States</p>
+              style="color: #2c7a7b; text-decoration: none;">sniderlandscape@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:260-450-5799"
+              style="color: #2c7a7b; text-decoration: none;">(260)-450-5799</a></p>
+          <p><strong>Address:</strong> 3015 Flaugh Rd, Fort Wayne, IN 46818, United States</p>
           <p><strong>Areas We Serve:</strong> Fort Wayne, Indiana</p>
         </div>
         <div class="image">
           <img src="assets/websiteAssets/phoneIcon.png" alt="Phone Icon">
         </div>
       </div>
+      <!-- Service Request Form -->
       <div class="contact-page">
         <div class="text">
-          <!-- Form for requesting service/quote -->
           <h2>Request a Service/Quote</h2>
           <div class="form-group">
             <p>Your Name:</p>
@@ -258,13 +328,16 @@
           <button type="submit" onclick="sendEmail()">Submit Request</button>
         </div>
         <div class="image">
-          <img src="assets/websiteAssets/quote.png" alt="Phone Icon">
+          <img src="assets/websiteAssets/quote.png" alt="Request Quote Icon">
         </div>
       </div>
-    </div>
+    </section>
   </main>
+
+  <!-- Footer Section -->
   <footer>
-    <p>&copy; 2024 SNIDER LANDSCAPING - ALL RIGHTS RESERVED.</p>
+    <p>&copy; 2025 SNIDER LANDSCAPING - ALL RIGHTS RESERVED.</p>
+    <!-- Custom JavaScript -->
     <script src="scripts/myscripts.js"></script>
   </footer>
 </body>
